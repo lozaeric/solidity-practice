@@ -26,7 +26,7 @@ jobs:
           node-version: '16'
       - name: Install Truffle
         run: npm install truffle -g
-      - name: Run Truffle Test with CI=true for Codechecks  
-        run: CI=true truffle test
+      - name: Run Truffle Test 
+        run: truffle test
       - name: Run Test Coverage
         run: truffle run coverage
